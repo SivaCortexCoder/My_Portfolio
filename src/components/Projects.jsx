@@ -44,8 +44,8 @@ const Projects = () => {
                         {project.featured ? 'Featured Project' : 'Project'}
                       </span>
                     </div>
-                    <h3 className="text-3xl font-bold text-white ">{project.title}</h3>
-                    <p className="text-white/90 text-lg mb-6">{project.description}</p>
+                    <h3 className="text-3xl font-bold text-white mb-3 ">{project.title}</h3>
+                    <p className="hidden md:block text-white/90 text-lg mb-6">{project.description}</p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.tech.slice(0,5).map((tech, i) => (
                         <span key={i} className="bg-white/20 text-white text-sm px-3 py-1 rounded-full">
