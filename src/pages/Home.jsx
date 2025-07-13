@@ -1,20 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Menu, X, Github, Linkedin, Mail, Phone, MapPin, 
-  ExternalLink, Calendar, Award, Code, Database, 
-  Wrench, ChevronRight, Send, User, BookOpen, 
-  Briefcase, Download, Eye, Star, ArrowRight, Play,
-  Zap, Heart, Coffee, Sparkles,
-} from 'lucide-react';
 import { certifications, education, experience, navItems, personalInfo, projects, skills, stats } from '../assets/data';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import About from '../components/About';
-import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Education from '../components/Education';
-import Experience from '../components/Experience';
-import Certification from '../components/Certification';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 import Skills1 from '../components/Skills1';
@@ -25,7 +15,7 @@ const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
-  // Mock data - replace with your actual data
+
   
 
   const scrollToSection = (sectionId) => {
@@ -50,7 +40,6 @@ const Portfolio = () => {
     });
   };
 
-  // Intersection Observer for active section tracking
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -87,7 +76,7 @@ const Portfolio = () => {
       <About/>
 
       {/* Skills Section */}
-      {/* <Skills/> */}
+  
 
       <Skills1/>
       
@@ -97,12 +86,6 @@ const Portfolio = () => {
       {/* Education Section */}
      <Education/>
 
-      {/* Experience Section */}
-      {/* <Experience/> */}
-
-t
-      {/* Certifications Section */}
-      {/* <Certification/> */}
 
       {/* Contact Section */}
       <Contact formData={formData} handleFormSubmit={handleFormSubmit} handleInputChange={handleInputChange}   />

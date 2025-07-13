@@ -22,7 +22,7 @@ const Navbar = ({activeSection, scrollToSection}) => {
                 <button
                   key={id}
                   onClick={() => scrollToSection(id)}
-                  className={`relative text-sm font-medium transition-all duration-300 hover:text-blue-600 ${
+                  className={`cursor-pointer relative text-sm font-medium transition-all duration-300 hover:text-blue-600 ${
                     activeSection === id 
                       ? 'text-blue-600' 
                       : 'text-gray-700'

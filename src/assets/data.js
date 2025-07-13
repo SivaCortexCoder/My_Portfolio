@@ -34,41 +34,34 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/siva-kumar-585123276/"
   };
 
-  export const stats = [
-    { number: "50+", label: "Projects Completed" },
-    { number: "5+", label: "Years Experience" },
-    { number: "15+", label: "Technologies Mastered" },
-    { number: "100%", label: "Client Satisfaction" }
-  ];
 
 
 
   export const skills = {
     frontend: [
-      { name: "HTML", img:html_img, level: 95, color: "bg-blue-500" },            
-      { name: "CSS", img:css_img, level: 88, color: "bg-green-500" },
-      { name: "JavaScript", img:js_img, level: 90, color: "bg-cyan-500" },
-      { name: "React Js", img:react_img, level: 92, color: "bg-blue-600" },
-       { name: "Tailwind CSS", img:tailwind_img , level: 88, color: "bg-gray-700" },
-        { name: "Zustand", img:zustand_img , level: 88, color: "bg-gray-700" }
+      { name: "HTML", img:html_img },            
+      { name: "CSS", img:css_img},
+      { name: "JavaScript", img:js_img},
+      { name: "React Js", img:react_img},
+       { name: "Tailwind CSS", img:tailwind_img},
+        { name: "Zustand", img:zustand_img}
     ],
     backend: [
-      { name: "Node.js", img:node_img , level: 90, color: "bg-green-600" },
-      { name: "Express", img:express_img, level: 85, color: "bg-yellow-500" },
-      { name: "MongoDB", img:mongo_img , level: 88, color: "bg-gray-700" },
-      { name: "Python", img:Python_img, level: 82, color: "bg-green-700" },
-       { name: "Rest_API", img:rest_img, level: 82, color: "bg-green-700" }
+      { name: "Node.js", img:node_img },
+      { name: "Express", img:express_img},
+      { name: "MongoDB", img:mongo_img },
+      { name: "Python", img:Python_img },
+       { name: "Rest_API", img:rest_img}
       
     ],
     tools: [
-      { name: "Git", img:git_img, level: 95, color: "bg-orange-500" },
-      { name: "GitHub", img:github_img, level: 88, color: "bg-blue-400" },
-      { name: "Postman", img:postman_img, level: 85, color: "bg-orange-400" },
-      { name: "Firebase", img:firebase_img,  level: 90, color: "bg-yellow-500" },
-      { name: "VS Code", img:vs_img, level: 98, color: "bg-blue-600" },
-      { name: "Photoshop", img:ps_img, level: 98, color: "bg-blue-600" },
-   
-      { name: "Canva", img:canva_img, level: 98, color: "bg-blue-600" }
+      { name: "Git", img:git_img},
+      { name: "GitHub", img:github_img},
+      { name: "Postman", img:postman_img},
+      { name: "Firebase", img:firebase_img},
+      { name: "VS Code", img:vs_img},
+      { name: "Photoshop", img:ps_img},   
+      { name: "Canva", img:canva_img}
     ]
   };
 
@@ -105,14 +98,6 @@ The admin panel enables role-based access to manage product uploads (with Cloudi
       "Responsive UI optimized for mobile and desktop using Tailwind CSS",
       "Orders & cart history saved in MongoDB per user session"
     ],
-    testimonials: [
-      {
-        name: "Campus Director",
-        feedback: "This platform transformed how our customers shop. The admin features and product uploads were super easy to use."
-      }
-    ],
-    category: "Full Stack Development",
-    duration: "Jan 2025 – Ongoing",
     featured: true
   },
 
@@ -138,9 +123,6 @@ The backend uses Express.js and NodeMailer to dispatch bulk emails, with real-ti
       "Real-time success/failure alerts with React Toastify",
       "Email preview and dynamic subject support"
     ],
-    testimonials: [],
-    category: "MERN Stack Utility",
-    duration: "June 2025",
     featured: false
   },
 
@@ -165,9 +147,6 @@ Built with React + Vite for fast loading, Tailwind CSS for styling, and Context 
       "State management via React Context API",
       "Displays temp, humidity, wind, and error handling"
     ],
-    testimonials: [],
-    category: "Frontend App",
-    duration: "May 2025",
     featured: false
   },
 
@@ -193,9 +172,6 @@ Built with React + Vite for fast loading, Tailwind CSS for styling, and Context 
       "Mobile-first, fully responsive design",
       "Clean code architecture with modular folder structure"
     ],
-    testimonials: [],
-    category: "Campus Solution",
-    duration: "Oct 2024 - Dec 2024",
     featured: true
   }
 ];
@@ -204,8 +180,7 @@ Built with React + Vite for fast loading, Tailwind CSS for styling, and Context 
   export const education = [
     {
       degree: "B.E Computer Science and Engineering",
-      institution: "S.A Engineering College, Chennai.",
-      
+      institution: "S.A Engineering College, Chennai.",      
       year: "2021-2025",
       cgpa: "CGPA: 7.2/10",
       description: "Focused on Core Computer Science and Emerging Technologies"
@@ -219,74 +194,6 @@ Built with React + Vite for fast loading, Tailwind CSS for styling, and Context 
     }
   ];
 
- export const experience = [
-    {
-      role: "Senior Full Stack Developer",
-      company: "TechCorp Solutions",
-      duration: "2022 - Present",
-      description: "Leading development of enterprise-level applications",
-      responsibilities: [
-        "Led development of 3 major client projects resulting in 40% increase in user engagement",
-        "Mentored junior developers and established coding best practices",
-        "Architected scalable microservices using Node.js and Docker",
-        "Implemented CI/CD pipelines reducing deployment time by 60%"
-      ]
-    },
-    {
-      role: "Frontend Developer",
-      company: "StartupXYZ",
-      duration: "2020 - 2022",
-      description: "Crafting beautiful user interfaces and experiences",
-      responsibilities: [
-        "Developed responsive web applications using React and TypeScript",
-        "Collaborated with design team to implement pixel-perfect UI components",
-        "Optimized application performance resulting in 50% faster load times",
-        "Built component library used across 5+ products"
-      ]
-    },
-    {
-      role: "Junior Developer",
-      company: "WebDev Agency",
-      duration: "2019 - 2020",
-      description: "Building foundational skills in web development",
-      responsibilities: [
-        "Developed client websites using HTML, CSS, and JavaScript",
-        "Maintained and updated existing web applications",
-        "Worked closely with senior developers to learn best practices"
-      ]
-    }
-  ];
-
- export const certifications = [
-    {
-      title: "AWS Solutions Architect",
-      issuer: "Amazon Web Services",
-      year: "2023",
-      credential: "https://aws.amazon.com/certification/",
-      icon: "☁️"
-    },
-    {
-      title: "Google Cloud Professional",
-      issuer: "Google Cloud",
-      year: "2022",
-      credential: "https://cloud.google.com/certification",
-      icon: "🌐"
-    },
-    {
-      title: "React Developer Certification",
-      issuer: "Meta",
-      year: "2021",
-      credential: "https://developers.facebook.com/certification/",
-      icon: "⚛️"
-    },
-    {
-      title: "MongoDB Certified Developer",
-      issuer: "MongoDB University",
-      year: "2021",
-      credential: "https://university.mongodb.com/",
-      icon: "🍃"
-    }
-  ];
 
  export const navItems = [
     { id: 'home', label: 'Home' },
@@ -294,7 +201,5 @@ Built with React + Vite for fast loading, Tailwind CSS for styling, and Context 
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'education', label: 'Education' },
-    // { id: 'experience', label: 'Experience' },
-    // { id: 'certifications', label: 'Certifications' },
     { id: 'contact', label: 'Contact' }
   ];
