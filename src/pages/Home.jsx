@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { certifications, education, experience, navItems, personalInfo, projects, skills, stats } from '../assets/data';
+import {navItems} from '../assets/data';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import About from '../components/About';

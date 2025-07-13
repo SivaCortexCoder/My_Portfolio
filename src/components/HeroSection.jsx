@@ -1,6 +1,6 @@
 import React from 'react'
 import { ArrowRight, Eye, Mail, Play } from 'lucide-react'
-import { personalInfo, stats } from '../assets/data'
+import { personalInfo} from '../assets/data'
 
 const HeroSection = ({ scrollToSection}) => {
   return (
