@@ -77,8 +77,8 @@ export const projects = [
       "React.js", "Tailwind CSS", "Firebase Auth", "Node.js",
       "Express.js", "MongoDB", "Razorpay", "Cloudinary", "Zustand"
     ],
-    github: "https://github.com/yourusername/fashion-ecommerce",
-    live: "https://your-deployed-site.com",
+    github: "https://github.com/SivaCortexCoder/Stylique-Ecom",
+    live: "https://stylique-ecom.vercel.app/",
     details: "Full-stack fashion e-commerce site with user auth, shopping cart, admin panel, and payment integration.",
     detailedDescription: `A modern full-stack fashion e-commerce platform designed to deliver a seamless shopping experience. 
 The application allows users to browse curated fashion collections, view product details with multiple images, manage a personalized cart, and place secure online orders. 
