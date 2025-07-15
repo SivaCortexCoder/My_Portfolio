@@ -46,7 +46,7 @@ const HeroSection = ({ scrollToSection}) => {
               </button>
               <button
                 onClick={() => scrollToSection('projects')}
-                className="group border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full font-medium hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-3"
+                className="group border-2 cursor-pointer border-blue-600 text-blue-600 px-8 py-4 rounded-full font-medium hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-3"
               >
                 <Eye size={20} />
                 View My Work

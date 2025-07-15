@@ -25,6 +25,7 @@ const Contact = ({handleFormSubmit,formData,handleInputChange}) => {
                 required
                 className="w-full px-4 py-3 border bg-white border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
+              <input type="hidden" name="_gotcha" className="display:none !important"></input>
               <input
                 type="email"
                 name="email"

@@ -8,6 +8,7 @@ import Education from '../components/Education';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 import Skills1 from '../components/Skills1';
+import { toast } from 'react-toastify';
 
 
 const Portfolio = () => {
@@ -26,12 +27,30 @@ const Portfolio = () => {
     }
   };
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I\'ll get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
-  };
+  const handleFormSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch('https://getform.io/f/allzkwva', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      toast.success('Message sent successfully!');
+      setFormData({ name: '', email: '', message: '' });
+    } else {
+      toast.error('Failed to send message. Please try again.');
+    }
+  } catch (error) {
+    console.error(error);
+    toast.error('Something went wrong. Please try again.');
+  }
+};
+
 
   const handleInputChange = (e) => {
     setFormData({
