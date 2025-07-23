@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Eye, Mail, Play } from 'lucide-react'
+import { ArrowRight, Eye, Mail, Play,GithubIcon, Linkedin, Phone, } from 'lucide-react'
 import { personalInfo} from '../assets/data'
 
 const HeroSection = ({ scrollToSection}) => {
@@ -52,6 +52,48 @@ const HeroSection = ({ scrollToSection}) => {
                 View My Work
                 <Play size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
               </button>
+            </div>
+              <div className='flex items-center justify-center gap-4 mb-5'>
+              <a
+                href={personalInfo.github} target="_blank"
+                className="group p-3 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 transform hover:scale-105"
+                aria-label="GitHub Profile"
+              >
+                <GithubIcon 
+                  size={20} 
+                  className="text-white"
+                />
+              </a>
+              <a
+                href={personalInfo.linkedin} target="_blank"
+                className="group p-3 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 transform hover:scale-105"
+                aria-label="LinkedIn Profile"
+              >
+                <Linkedin 
+                  size={20} 
+                  className="text-white"
+                />
+              </a>
+              <a
+                href={`tel:${personalInfo.phone}`}
+                className="group p-3 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 transform hover:scale-105"
+                aria-label="Phone"
+              >
+                <Phone 
+                  size={20} 
+                  className="text-white"
+                />
+              </a>
+              <a
+                href={`mailto:${personalInfo.email}`}
+                className="group p-3 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-300 transform hover:scale-105"
+                aria-label="Email"
+              >
+                <Mail 
+                  size={20} 
+                  className="text-white"
+                />
+              </a>
             </div>
 
           </div>
