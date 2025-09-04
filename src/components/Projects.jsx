@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ExternalLink, Github, Star, Eye } from 'lucide-react'
 import { projects } from '../assets/data'
+import { ProjectContext } from '../context/ProjectProvider'
 
 const Projects = () => {
+
+  const {projects} = useContext(ProjectContext)
   const navigate = useNavigate()
 
   const handleViewDetails = (projectId) => {
@@ -25,13 +28,13 @@ const Projects = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project) => (
               <div
-                key={project.id}
+                key={project._id}
                 className={`relative overflow-hidden rounded-3xl shadow-xl ${
                   project.featured ? 'md:col-span-2' : ''
                 }`}
               >
                 <img
-                  src={project.image}
+                  src={project.imagelink1}
                   alt={project.title}
                   className="w-full h-80 object-cover"
                 />
@@ -55,7 +58,7 @@ const Projects = () => {
                     </div>
                     <div className="flex gap-4">
                       <button
-                        onClick={() => handleViewDetails(project.id)}
+                        onClick={() => handleViewDetails(project._id)}
                         className="cursor-pointer bg-white/20 text-white px-4 py-2 rounded-full flex items-center gap-2 backdrop-blur-sm"
                       >
                         <Eye size={18} /> View Details

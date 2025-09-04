@@ -12,7 +12,7 @@ const HeroSection = ({ scrollToSection}) => {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in">
             <div className="mb-8">
-              <div className="relative inline-block ">
+              <div className="relative inline-block sideDown ">
                 <img
                   src={personalInfo.image}
                   alt={personalInfo.name}
@@ -20,19 +20,21 @@ const HeroSection = ({ scrollToSection}) => {
                 />
 
               </div>
-              <div>
-                
-              </div>
+            
+            <div className='sideUp'>
+
+            
               
-              <h1 className="text-6xl md:text-7xl font-bold text-gray-900 mb-4 leading-tight">
+              <h1 className="text-6xl md:text-7xl font-bold text-gray-900 mb-4 leading-tight ">
                 {personalInfo.name}
               </h1>
-              <h2 className="text-3xl md:text-4xl font-medium bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
+              <h2 className="text-3xl md:text-4xl font-medium bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6 ">
                 {personalInfo.role}
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed ">
                 {personalInfo.tagline}
               </p>
+              </div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">

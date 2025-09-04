@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   ArrowLeft,
@@ -12,23 +12,26 @@ import {
   Home,
   Play
 } from 'lucide-react';
-import { projects } from '../assets/data';
+import { ProjectContext } from '../context/ProjectProvider';
+// import { projects } from '../assets/data';
 
 const ProjectDetails = () => {
+  const {projects} = useContext(ProjectContext)
   const { id } = useParams();
   const navigate = useNavigate();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [project, setProject] = useState(null);
 
   useEffect(() => {
-    const foundProject = projects.find(p => p.id === parseInt(id));
+     if (!projects.length) return;
+    const foundProject = projects.find(p => p._id === id);
     if (foundProject) {
-      foundProject.images = [foundProject.image, foundProject.image2, foundProject.image3].filter(Boolean);
+      foundProject.images = [foundProject.imagelink1, foundProject.imagelink2, foundProject.imagelink3].filter(Boolean);
       setProject(foundProject);
     } else {
       navigate('/');
     }
-  }, [id, navigate]);
+  }, [id,projects, navigate]);
 
   const handleBack = () => navigate('/');
 
@@ -91,7 +94,7 @@ const ProjectDetails = () => {
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-4 mb-12">
             <a
-              href={project.live}
+              href={project.livelink}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
@@ -101,7 +104,7 @@ const ProjectDetails = () => {
               <ExternalLink size={16} />
             </a>
             <a
-              href={project.github}
+              href={project.githublink}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors"
