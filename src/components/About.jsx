@@ -60,7 +60,7 @@ const About = () => {
                 <img
                   src={personalInfo.image}
                   alt={personalInfo.name}
-                  className="w-full md:w-[60%] h-96 mx-auto rounded-2xl object-cover"
+                  className="w-full md:w-[70%] h-96 mx-auto rounded-2xl object-cover"
                 />
 
               </div>

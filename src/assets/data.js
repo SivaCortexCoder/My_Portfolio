@@ -25,7 +25,7 @@ export const personalInfo = {
     name: "Siva Kumar",
     role: "MERN Stack Developer",
     tagline: "Crafting digital experiences that inspire and delight users worldwide",
-    image: "https://res.cloudinary.com/dvgux7v3x/image/upload/v1752258829/profile_g4f5a3.png",
+    image: "https://res.cloudinary.com/dvgux7v3x/image/upload/v1757063333/Untitled-ssssaq_tsml6c.png",
     about: `I’m a dedicated MERN Stack developer passionate about crafting responsive web applications that make life easier. My journey started with curiosity and has grown into a love for solving real-world problems through clean, efficient code. Outside of coding, I enjoy learning new tech, building personal projects, and connecting with others in the developer community.`,
     email: "sivaofficial76@gmail.com",
     phone: "+91 9500059697",
